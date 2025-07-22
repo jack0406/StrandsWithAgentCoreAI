@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class CoreInterface(ABC):
     """Interface for agent cores that execute requests."""
 

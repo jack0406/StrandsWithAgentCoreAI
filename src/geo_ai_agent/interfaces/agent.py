@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class AgentInterface(ABC):
     """Interface for agents capable of responding to text queries."""
 
