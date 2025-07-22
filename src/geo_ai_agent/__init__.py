@@ -1,7 +1,6 @@
 """High level package exporting Geo AI agent components."""
 
-from .agents import Supervisor, GeoQueryAgent, StrandsAgent
-from .geo_ai_agent import GeoAIAgent
+from .agents import GeoAIAgent, GeoQueryAgent, StrandsAgent
 from .tools import (
     Tool,
     SubAgentTool,
@@ -18,7 +17,6 @@ from .core import (
 from .interfaces import AgentInterface, CoreInterface, ServerInterface
 
 __all__ = [
-    "Supervisor",
     "GeoQueryAgent",
     "StrandsAgent",
     "GeoAIAgent",

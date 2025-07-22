@@ -2,14 +2,14 @@
 
 import logging
 
-from .agents import Supervisor, GeoQueryAgent
+from .agents import GeoAIAgent, GeoQueryAgent
 from .core import BedrockAgentCore, MCPServer, configure_logging
 from .tools import SubAgentTool, BedrockAgentCoreTool, MCPServerTool
 
 
 def main() -> None:
     configure_logging(logging.INFO)
-    agent = Supervisor()
+    agent = GeoAIAgent()
 
     agent.register_tool("geo_query", SubAgentTool(GeoQueryAgent()))
     agent.register_tool("bedrock", BedrockAgentCoreTool(BedrockAgentCore()))

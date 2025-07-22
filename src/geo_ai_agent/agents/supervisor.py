@@ -6,7 +6,7 @@ from ..tools import Tool
 logger = logging.getLogger(__name__)
 
 
-class Supervisor:
+class GeoAIAgent:
     """Coordinator agent that delegates requests to registered tools."""
 
     def __init__(self) -> None:
@@ -24,3 +24,5 @@ class Supervisor:
             raise ValueError(f"Unknown tool '{tool_name}'")
         logger.info("Routing request to tool %s", tool_name)
         return tool.run(*args, **kwargs)
+
+
