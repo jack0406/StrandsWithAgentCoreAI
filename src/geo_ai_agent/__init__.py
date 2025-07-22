@@ -7,6 +7,9 @@ from .tools import (
     StrandsAgentTool,
     BedrockAgentCoreTool,
     MCPServerTool,
+    EchoTool,
+    mcp_status,
+    tool,
 )
 from .core import (
     AgentType,
@@ -25,6 +28,9 @@ __all__ = [
     "StrandsAgentTool",
     "BedrockAgentCoreTool",
     "MCPServerTool",
+    "EchoTool",
+    "mcp_status",
+    "tool",
     "AgentType",
     "BedrockAgentCore",
     "MCPServer",
