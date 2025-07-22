@@ -24,7 +24,7 @@ Create a new class implementing the :class:`Tool` interface and register it
 with the agent:
 
 ```python
-from strands_with_agent_core_ai import GeoAIAgent, Tool
+from geo_ai_agent import GeoAIAgent, Tool
 
 class MyTool(Tool):
     def run(self, text: str) -> str:

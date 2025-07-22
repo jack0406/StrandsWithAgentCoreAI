@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class ServerInterface(ABC):
     """Interface for servers that accept commands."""
 

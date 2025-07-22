@@ -1,6 +1,6 @@
 """Example showing individual tools in isolation."""
 
-from strands_with_agent_core_ai import (
+from geo_ai_agent import (
     StrandsAgent,
     BedrockAgentCore,
     MCPServer,

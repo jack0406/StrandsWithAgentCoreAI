@@ -1,6 +1,6 @@
 """Demonstrates integrating GeoAIAgent with agent and server tools."""
 
-from strands_with_agent_core_ai import (
+from geo_ai_agent import (
     GeoAIAgent,
     StrandsAgent,
     BedrockAgentCore,

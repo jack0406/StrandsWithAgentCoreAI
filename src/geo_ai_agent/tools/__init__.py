@@ -3,6 +3,7 @@ import logging
 from typing import Any
 
 from ..agents.sub_agents.sub_agent import SubAgent
+from ..agents.sub_agents.strands_agent import StrandsAgent
 from ..core import BedrockAgentCore, MCPServer
 
 logger = logging.getLogger(__name__)
@@ -25,6 +26,17 @@ class SubAgentTool(Tool):
 
     def run(self, query: str) -> str:
         logger.debug("SubAgentTool received query: %s", query)
+        return self.agent.respond(query)
+
+
+class StrandsAgentTool(Tool):
+    """Tool wrapper for a Strands Agent."""
+
+    def __init__(self, agent: StrandsAgent) -> None:
+        self.agent = agent
+
+    def run(self, query: str) -> str:
+        logger.debug("StrandsAgentTool received query: %s", query)
         return self.agent.respond(query)
 
 
@@ -53,6 +65,7 @@ class MCPServerTool(Tool):
 __all__ = [
     "Tool",
     "SubAgentTool",
+    "StrandsAgentTool",
     "BedrockAgentCoreTool",
     "MCPServerTool",
 ]
